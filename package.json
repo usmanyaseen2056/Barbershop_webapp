@@ -1,0 +1,23 @@
+{
+  "name": "trimgo-platform",
+  "version": "1.0.0",
+  "description": "TrimGo full-stack on-demand barber platform",
+  "private": true,
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend"
+  ],
+  "scripts": {
+    "dev:frontend": "npm run dev -w frontend",
+    "dev:backend": "npm run dev -w backend",
+    "build": "npm run build -w frontend",
+    "start": "npm run start -w backend",
+    "test": "npm run test -w backend",
+    "test:frontend": "npm run build -w frontend",
+    "test:all": "npm run test -w backend && npm run test:frontend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
